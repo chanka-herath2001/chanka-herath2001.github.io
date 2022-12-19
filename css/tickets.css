@@ -1,0 +1,306 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: gainsboro;
+    
+}
+ h1{
+    color: #04AA6D;
+    font-weight: bold;
+}
+form{
+    padding-top: 10px;
+    padding-right: 100px;
+    border: gainsboro;
+    margin-left: 50px;
+}
+form input{
+    font-size: 20px;
+}
+.tickets button {
+    border-radius: 50px;
+    height: 35px;
+    width: 35px;
+    outline: none;
+    border: 0;
+    color: #24262b;
+    background-color: #98FB98;
+    font-size: 23px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.tickets button:hover{
+    background-color: #04AA6D;
+    color: #fff;
+    height: 36px;
+    width: 36px;
+}
+.tickets input{
+    width: 50px;
+    height: 40px;
+    border: none;
+    background-color: gainsboro;
+}
+.details label{
+     font-size: 20px;
+}
+.details input{
+    float: right;
+    margin-right: 50px;
+}
+.details select{
+    width: 80px;
+    height: 30px;
+    border: black;
+    justify-content: end;
+    margin-right: 50px;
+    margin-left: 275px;
+}
+.button{
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+    margin-left: 200px;
+}
+ label{
+    font-size: 20px;
+}
+.price{
+    font-size: 15px;
+    color: grey;
+}
+.ticket{
+    display: flex;
+    justify-content:start;
+}
+.price{
+    display: flex;
+    justify-content: start;
+}
+.duration{
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+    margin-left: 200px;
+}
+.duration select{
+    padding: 5px;
+    border-radius: 20px;
+}
+.duration1{
+    display: flex;
+    justify-content: start;
+
+}
+#output {
+    min-height: 50px;
+    border: none;
+    width: 450px;
+    margin-right: 50px;
+}
+.breakdown p{
+    font-size: 22px;
+    color:darkcyan;
+}
+.total p{
+    font-size: 26px;
+    font-weight: bolder;
+    color:darkcyan;
+}
+.ticketform{
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+}
+.information{
+   grid-column-start: 1;
+   grid-column-end: 1;
+   grid-row-start: 1;
+   grid-row-end: 1;
+}
+.order{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+table{
+    width: 100%;
+}
+.type th{
+    width: 70%;
+}
+th{
+    font-size: 25px;
+    color:whitesmoke;
+    background-color: darkcyan;
+    padding: 10px;
+    border-radius: 10px;
+}
+td{
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    color:#24262b;
+    background-color:rgb(187, 186, 186);
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+}
+.order p{
+    font-size: 24px;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+}
+.submit img{
+    width: 35px;
+    height: 35px;
+    color: #fff;
+}
+.submit1{
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+}
+.submit1 img{
+    width: 35px;
+    height: 35px;
+    color: #fff;
+}
+.submit2{
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+}
+.submit button{
+    font-size: 24px;
+    font-weight: bold;
+    gap: 10px;
+    margin-bottom: 5px;
+    background-color:#04AA6D;
+    color:whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.submit button:hover{
+   background-color: crimson;
+   color: white;
+}
+.submit1 button{
+    font-size: 24px;
+    font-weight: bold;
+    gap: 10px;
+    margin-bottom: 5px;
+    background-color:#98FB98;
+    color:#24262b;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.submit1 button:hover{
+    background-color: darkcyan;
+    color: #fff;
+}
+.submit2 button{
+    font-size: 24px;
+    font-weight: bold;
+    gap: 10px;
+    margin-bottom: 5px;
+    background-color:darkcyan;
+    box-shadow: #24262b;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.submit2 button:hover{
+    background-color: #98FB98;
+    color: #24262b;
+}
+.submit3{
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+}
+.submit3 button{
+    font-size: 24px;
+    font-weight: bold;
+    gap: 10px;
+    margin-bottom: 5px;
+    background-color:maroon;
+    box-shadow: white;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.submit3 button:hover{
+    background-color: wheat;
+    color: maroon;
+}
+.fav p{
+    font-size: 25px;
+    font-weight: bolder;
+    color:darkred;
+}
+.placeorder{
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+}
+.placeorder button{
+    font-size: 24px;
+    font-weight: bold;
+    gap: 10px;
+    margin-bottom: 5px;
+    background-color:aquamarine;
+    color:#24262b;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.placeorder button:hover{
+    background-color: darkgoldenrod;
+    color: white;
+}
+.placeorder img{
+    width: 35px;
+    height: 35px;
+}
+.loyalty{
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+}
+.loyalty button{
+    font-size: 24px;
+    font-weight: bold;
+    gap: 10px;
+    margin-right: 5px;
+    background-color:black;
+    color:#98FB98;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.loyalty button:hover{
+    background-color: pink;
+    color: black;
+}
+.loyalty img{
+    width: 35px;
+    height: 35px;
+}
