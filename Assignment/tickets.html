@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This is a site about Sri Lankan tea">
+        <title>Sri Lankan Tea</title>
+
+        <link rel="stylesheet" href="../Assignment/css/tickets.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    </head>
+    <body>
+        <div class="ticketform">
+            <div class="information">
+            <form class="form" id="form">
+                <!--<fieldset>-->
+                    <div  class="mainHeader"><h1>Book Train Tickets</h1></div>
+                    <h2>Date</h2>
+                    <div class="details">
+                    <p>
+                        <label>Full name</label>
+                        <input type="text" name="full name" id="fname" required>
+                    </p>
+                    <p>
+                        <label>Mobile number</label>
+                
+                        
+                        <input type="tel" name="mobile number" id="mnum" required>
+                    </select>
+                    </p>
+                    <p>
+                        <label>Email</label>
+                        <input type="text" name="email" id="email" required>
+                    </p>
+                    <p>
+                        <label>Confirm email</label>
+                        <input type="text" name="confirm" id="cemail" required>
+                    </p>
+                    <p>
+                        <label>Select a date</label>
+                        <input type="date" name="calendar" id="cal" required>
+                    </p>
+                    <p>
+                        <label>Gender</label>
+                        <select id="gender" name="gender">
+                            <option value="half" selected>Male</option> 
+                            <option value="full" >Female</option> 
+                        </select> 
+                    </p>
+                    </div>
+                        <h2>Guests</h2>
+                        <div class="tickets">
+                    <p>
+                        <div class="ticket">
+                        <label>Sri Lankan Adult <p class="price">LKR 1200</p></label>
+                        <div class="button">
+                        <button id="minus">-</button>
+                        <input type="number" name="sladult" id="sladult" value="0" min="0" step="0">
+                        <button id="plus">+</button>
+                        </div>
+                        </div>
+                    </p>
+                    <p>
+                        <div class="ticket">
+                        <Label>Sri Lankan Child(4 - 13 years) <p class="price">LKR 700</p></Label>
+                        <div class="button">
+                        <button id="minus1">-</button>
+                        <input type="number" name="slchild" id="slchild" value="0" min="0">
+                        <button id="plus1">+</button>
+                        </div>
+                        </div>
+                    </p>
+                    <p>
+                        <div class="ticket">
+                        <label>Foreigner Adult<p class="price">LKR 5500</p></label>
+                        <div class="button">
+                        <button id="minus2">-</button>
+                        <input type="number" name="fadult" id="fadult" value="0" min="0">
+                        <button id="plus2">+</button>
+                        </div>
+                        </div>
+                    </p>
+                    <p>
+                        <div class="ticket">
+                        <label>Foreigner Child(4 - 13 years) <p class="price">LKR 2700</p></label>
+                        <div class="button">
+                        <button id="minus3">-</button>
+                        <input type="number" name="fchild" id="fchild" value="0" min="0">
+                        <button id="plus3">+</button>
+                        </div>
+                        </div>
+                    </p>
+                    <p>
+                        <div class="ticket">
+                        <label>Infant(under 4 years) <p class="price">Free</p></label>
+                        <div class="button">
+                        <button id="minus4">-</button>
+                        <input type="number" name="infant" id="infant" value="0" min="0">
+                        <button id="plus4">+</button>
+                        </div>
+                        </div>
+                    </p>
+                </div>
+                <h2>Duration</h2>
+                    <p>
+                        <div class="duration1">
+                        <label for="visit">Visit Duration</label>
+                        <div class="duration">
+                        <select id="visit" name="visit">
+                        <option value="half">1/2 day</option> 
+                        <option value="full" >Full day</option> 
+                        <option value="three" selected>3 hours</option>
+                        </select> 
+                        </div>
+                        </div>
+                    </p><br>
+                    <p>
+                        <div class="submit2">
+                        <button type="button" id="calculate" name="calculate" >+ Add to Order</button>
+                        </div>    
+                        <div class="submit3">
+                        <button type="reset" id="calculate" name="calculate" >- Reset</button>
+                        </div>
+                    </p>
+                <!--</fieldset>-->
+            </form>
+        </div>
+         <div class="order">
+        <form>
+            
+                <h2>Your Order</h2>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <th>Amount</th>
+                    </tr>
+                    <tr>
+                        <td class="type"><p>SL Adults</p></td>
+                        <td><div class="breakdown"><p id="sladultamount"></p></div></td>
+                    </tr>
+                    <tr>
+                        <td class="type"><p>SL Child</p></td>
+                        <td><div class="breakdown"><p id="slchildamount"></p></div></td>
+                    </tr>
+                    <tr>
+                        <td class="type"><p>Foreign Adult</p></td>
+                        <td><div class="breakdown"><p id="fadultamount"></p></div></td>
+                    </tr>
+                    <tr>
+                        <td class="type"><p>Foreign Child</p></td>
+                        <td><div class="breakdown"><p id="fchildamount"></p></div></td>
+                    </tr>
+                    <tr>
+                        <td class="type"><p>Infant</p></td>
+                        <td><div class="breakdown"><p id="infantamount"></p></div></td>
+                    </tr>
+                    <tr>
+                        <td class="type"><div class="total"><p>Total</p></div></td>
+                        <td><div class="total"><p id="output"></p></div></td>
+                    </tr>
+                </table><br>
+                    <!--<div class="order"><P id="order"></P></div>-->
+                    <table id="ordertable">
+                        <tr>
+                            <th>Order Number</th>
+                            <th>Value</th>
+                        </tr>
+                        <tr>
+                            <td ><p id="order"></p></td>
+                            <td><p id="ordernum"></p></td>
+                        </tr>
+                        <tr><div id="testTable"></div></tr>
+                
+                        <tr>
+                            <div class="fav"><td class="fav"><p>Favourite Order</p></td></div>
+                            <div class="fav"><td class="fav"><p id="favOrder"></p></td></div>
+                        </tr>
+                    </table>
+                    <div class="fav"><P id="favOrder"></P></div>
+                    <div class="submit">
+                        <button type="submit" id="addFave" name="addFave"><img src="../Assignment/images/shopping cart3.png"> Add to Favourites</button>
+                    </div>
+                    <div class="submit1">
+                        <button type="submit" id="orderFave" name="orderFave"><img src="../Assignment/images/shopping cart 2.png">Order Favourites</button>
+                    </div>    
+                    
+                    
+            </form>
+            <form>
+                <div class="loyalty">
+                    <button type="submit" id="loyalty" name="loyalty"><img src="../Assignment/images/loyalty.png">Check Loyalty</button>
+                </div><br>
+                
+                <div class="placeorder">
+                    <button type="submit" id="placeorder" name="placeorder"><img src="../Assignment/images/dollar.png">Place Order</button>
+                </div>
+            </form>
+         </div>
+        </div> 
+        <script src="../Assignment/js/tickets.js"></script>
+</body>
+<footer>
+    
+</footer>
+</html>

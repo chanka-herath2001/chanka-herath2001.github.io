@@ -1,0 +1,60 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: gainsboro;
+    
+}
+form{
+    padding-top: 100px;
+    padding-right: 400px;
+    border: gainsboro;
+    margin-left: 400px;
+    color: black;
+    outline: none;
+}
+.details label{
+    font-size: 20px;
+}
+.details input{
+   float: right;
+   margin-right: 50px;
+   width: 400px;
+}
+.details select{
+    float: right;
+    margin-right: 50px;
+}
+form input{
+    font-size: 20px;
+}
+.expdate input{
+    float: right;
+    margin-right: 50px;
+    width: 50px;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+}
+.output p{
+    font-size: 23px;
+    color: darkcyan;
+}
+.donatebutton button{
+    font-size: 24px;
+    font-weight: bold;
+    gap: 10px;
+    margin-bottom: 5px;
+    background-color:#04AA6D;
+    color:whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.donatebutton button:hover{
+   background-color: white;
+   color:#04AA6D;
+}

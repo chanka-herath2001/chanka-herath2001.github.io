@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This is a site about Sri Lankan tea">
+        <title>Sri Lankan Tea</title>
+        <link rel="stylesheet" href="../Assignment/css/normalize.css">
+        <link rel="stylesheet" href="../Assignment/css/donations.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    </head>
+    <body>
+        <form id="form">
+            <fieldset>
+                <div class="donateform">
+                <div class="details">
+                <legend>Donate</legend>
+                <p>
+                   <label>Full name</label>
+                   <input type="text" name="fname" maxlength="300" id="fname" >
+                </p>
+                <p>
+                    <label> Email address</label>
+                    <input type="text" name="address" id="address" required>
+                </p>
+                <p>
+                    <label>Select amount</label>
+                    <select id="amount" name="amount">
+                        <option value="100" selected>LKR 100</option>
+                        <option value="500">LKR 500</option>
+                        <option value="1000">LKR 1000</option>
+                        <option value="2000">LKR 2000</option>
+                        <option value="5000">LKR 5000</option>
+                        <option value="10000">LKR 10000</option>
+                    </select>
+                </p>
+                <p>
+                    <label>Card Number</label>
+                    <input type="text" name="cardnum" id="cardnum" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" maxlength="16" minlength="16" required>
+                </p>
+                </div>
+                <div class="expdate">
+                <p>
+                    <label>Expiry date</label>
+                    <input type="tel" name="exp" id="exp" required>
+                </p>
+                <p>
+                    <label>CVC/CVV</label>
+                    <input type="tel" name="cvc" id="cvc" required>
+                </p>
+                </div>
+                <div class="details">
+                    <p>
+                        <label>Name on card</label>
+                        <input type="text" name="cardname" id="cardname" required>
+                    </p>
+                </div>
+                <div class="submit">
+                <div class="donatebutton"><button type="submit" id="donate">Donate</button></div>
+                </div>
+                <div class="output"> 
+                <p id="output"></p>
+                </div>
+                </div>
+            </fieldset>
+        </div>
+        </form>
+        
+        <script src="../Assignment/js/donate.js"></script>
+        
+    </body>
